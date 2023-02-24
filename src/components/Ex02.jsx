@@ -18,25 +18,19 @@ export const Ex02 = () => {
 
   return (
     <div>
-      <br />
-      <h1>Llamar una API</h1>
-      <div className="d-flex justify-content-center align-items-center" style={{ marginTop: "50px" }}>
-        <Card className="text-center" bg="secondary">
-          <div style={{ width: "100%", height: "auto", textAlign: "center" }}>
-            <img
-              src={imageUrl}
-              alt="Imagen aleatoria"
-              style={{ maxWidth: "100%", maxHeight: "200px" }}
-            />
-          </div>
-          <Card.Body>
-            <Button variant="dark" onClick={handleClick}>
-              Cambiar imagen
-            </Button>
-            <br />
-          </Card.Body>
-        </Card>
-      </div>
+    <br />
+    <h1>Llamar una API</h1>
+    <div className="d-flex justify-content-center align-items-center" style={{ marginTop: "50px" }}>
+      <Card className="text-center" bg="secondary" style={{ height: "100%"}}>
+        <Card.Img variant="top" src={imageUrl} style={{ width: 300, height: 250, margin: "auto" }} />
+        <Card.Body>
+          <Button variant="dark" onClick={handleClick}>
+            Cambiar imagen
+          </Button>
+          <br />
+        </Card.Body>
+      </Card>
+    </div>
     </div>
   );
 };
