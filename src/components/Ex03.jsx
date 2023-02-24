@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import imagen from "./img/imagen.png";
+import imagen from "./img/imagen.jpg";
 
 export const Ex03 = () => {
   const [users, setUsers] = useState([]);
