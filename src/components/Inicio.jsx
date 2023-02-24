@@ -1,5 +1,6 @@
 import React from 'react';
 import Figure from 'react-bootstrap/Figure';
+import meImage from './img/me.png';
 
 export const Inicio = () => {
   return (
@@ -11,7 +12,7 @@ export const Inicio = () => {
           width={171}
           height={180}
           alt="171x180"
-          src='src\components\img\me.png'
+          src={meImage}
           style={{ border: '5px solid gray' }}
         />
         <Figure.Caption style={{ fontSize: '50px', color: 'lightgray' }}>
